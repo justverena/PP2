@@ -30,7 +30,7 @@ while ok:
                  i = (i + 1) % len(playlist)
                  pygame.mixer.music.load(playlist[i])
                  pygame.mixer.music.play()
-            elif event.key == key_previous:
+            elif event.key == kprevious:
                  i = (i - 1) % len(playlist)
                  pygame.mixer.music.load(playlist[i])
                  pygame.mixer.music.play()
