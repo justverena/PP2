@@ -19,8 +19,8 @@ while ok:
     screen.blit(mickey, (0, 0))
     time = datetime.datetime.now()
     clock.tick(30)
-    rotate(screen, l_hand, -time.second * 6, x, y)
-    rotate(screen, r_hand, -time.minute * 6 - 42, x, y)
+    rotate(screen, l_hand,-time.minute * 6 - 42 , x, y)
+    rotate(screen, r_hand,-time.second * 6 , x, y)
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             ok = False
